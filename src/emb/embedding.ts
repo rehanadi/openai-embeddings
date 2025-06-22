@@ -25,7 +25,7 @@ export const loadJSONData = <T>(fileName: string): T => {
   return JSON.parse(rawData.toString())
 }
 
-const saveDataToJSONFile = (data: any, fileName: string) => {
+export const saveDataToJSONFile = (data: any, fileName: string) => {
   const dataString = JSON.stringify(data)
   const dataBuffer = Buffer.from(dataString)
   const path = join(__dirname, fileName)

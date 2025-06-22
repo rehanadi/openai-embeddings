@@ -4,18 +4,18 @@ import {
   loadJSONData,
 } from "./embedding"
 
-type Similarity = {
+export type Similarity = {
   input: string
   similarity: number
 }
 
-const dotProduct = (a: number[], b: number[]): number => {
+export const dotProduct = (a: number[], b: number[]): number => {
   return a
     .map((value, index) => value * b[index])
     .reduce((sum, value) => sum + value, 0)
 }
 
-const cosineSimilarity = (a: number[], b: number[]): number => {
+export const cosineSimilarity = (a: number[], b: number[]): number => {
   const product = dotProduct(a, b)
   const aMagnitude = Math.sqrt(
     a.map((value) => value * value).reduce((sum, value) => sum + value, 0)
@@ -61,7 +61,7 @@ const main = async () => {
   })
 }
 
-main()
+// main()
 
 /*
 Similarities for input "How old is John?":

@@ -1,0 +1,22 @@
+{
+  "name": "openai-embeddings",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node -r ts-node/register --env-file=.env src/emb/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^24.0.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "openai": "^5.5.1",
+    "tiktoken": "^1.0.21"
+  }
+}

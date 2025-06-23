@@ -76,4 +76,4 @@ const main = async () => {
   await queryVectors()
 }
 
-main()
+// main()
